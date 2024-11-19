@@ -3,7 +3,24 @@
 				Affects everything
 					
 ***************************************************************************/ 
-
+@font-face { 
+	font-family: "Century Gothic";
+	src: url("GOTHIC.TTF");
+}
+	header h1, h2, h3, .figures p { 
+		font-family: "Century Gothic";
+		font-weight: bold;
+	}
+	li, p, label, .submitbut, footer { 
+		font-family: "Century Gothic";
+		font-weight: normal;
+	} 
+	
+body { 
+	text-align: center;
+	/*top, bottom & right, left*/
+	margin: 0px 0px;
+} 
 
 /*******************************************************************
 
@@ -11,5 +28,54 @@
 					
 ***************************************************************************/
 .site-logo { 
-	width: 50%; 
+	width: 6%; 
 } 
+
+header h1 { 
+	/*top bottom, right left*/
+	margin: 0rem 0rem;
+	/*top right bottom left*/
+	padding: 0.313rem 0rem 0.875rem 0rem;
+	color: #6d5184;
+} 
+
+nav { 
+background: linear-gradient(90deg, rgba(253,207,189,1) 26%, rgba(224,165,214,1) 50%, rgba(180,203,232,1) 75%);
+} 
+	nav ul { 
+		display: flex;
+		justify-content: space-evenly;
+		margin: 0rem;
+	}
+	nav li { 
+		list-style-type: none;
+		color: white;
+		text-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
+		/*top bottom, right left*/
+		margin: 0.5rem 0rem; 
+	}
+
+/*******************************************************************
+
+				Main
+					
+***************************************************************************/
+h2 { 
+	color: #6d5184; 
+} 
+h2~p{ 
+	margin-bottom: 0rem;
+}
+
+		/*figures*/
+.figures div{ 
+	margin-top: 55px;
+	display: flex;
+}
+figure img { 
+	width: 15%;
+}
+
+img.woman {
+	width: 25%;
+}
