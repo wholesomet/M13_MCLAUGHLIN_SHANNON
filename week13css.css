@@ -45,7 +45,7 @@ background: linear-gradient(90deg, rgba(253,207,189,1) 26%, rgba(224,165,214,1) 
 	nav ul { 
 		display: flex;
 		justify-content: space-evenly;
-		margin: 0rem;
+		margin: 0px;
 	}
 	nav li { 
 		list-style-type: none;
@@ -72,11 +72,11 @@ h2~p{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	column-gap: 80px;
+	column-gap: 95px;
 } 
 .figures div{ 
 	margin-top: 55px;
-	width: 21%; 
+	width: 18%; 
 	
 	/*top right bottom left*/
 	border-width: 28px 0px 0px 0px; 
@@ -102,10 +102,120 @@ h2~p{
 .figures p { 
 	position: relative;
 	top: -4px;
+	color: white;
 	text-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
 }
 
 /*form and woman image*/
+.formAndWoman{ 
+	display: flex;
+	justify-content: center;
+	column-gap: 80px;
+	margin-top: 50px;
+	margin-bottom: 26px;
+	
+}
+.formAndWoman h3 { 
+	color: white;
+} 
+form { 
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+	
+	width: 33%;
+	height: 600px;
+	background-color: #6d5184;  
+	background-size: contain;
+    background-position: center;
+} 
+	form:not(.submitbut) { 
+		color: white;
+	} 
+	.firstFormSec, .secondFormSec, .thirdFormSec { 
+		align-self: flex-start;
+		margin-left: 35px;
+	}
+	form input:not(.submitbut), form textarea, .secondFormSec input{ 
+		background-color: white;
+		border: none;
+	}
+	
+	.firstFormSec label { 
+		float: left; 
+		clear: both;
+		/*top right bottom left*/
+		margin: 7px 0px 2px 0px; 
+	} 
+	.firstFormSec input { 
+		width: 355px;
+		height: 22px;
+		position: relative; 
+		right: -7px;
+	}
+	.secondFormSec { 
+		/*top bottom, right left*/
+		padding: 14px 0px; 
+	} 
+	.secondFormSec p { 
+		margin-bottom: 5px;
+	} 
+	.bubbleOpt { 
+		display: flex;
+	}
+		.bubbleOpt input { 
+			margin-left: 0px;
+		} 
+
+	.thirdFormSec label { 
+		float: left;
+	}
+	.thirdFormSec textarea {
+		width: 360px; 
+		height: 79px; 
+		position: relative; 
+		right: -7px;
+	}
+	.thirdFormSec .submitbut { 
+		background-color: white;
+		color: #6d5184; 
+		
+		border: solid 2px;
+		/*top right bottom left*/
+		border-color: grey black black grey; 
+		margin-top: 5px;
+		float: left;
+		position: relative; 
+		right: -7px;
+		width: 107px; 
+		height: 33px;
+	} 
+
 img.woman 	{
 	width: 25%;
+	object-fit: cover;
+	border: solid 3px #fdcfbd;
+	padding: 13px;
 }
+
+/*******************************************************************
+
+				Footer
+					
+***************************************************************************/
+
+footer { 
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	
+	color: white;
+	text-shadow: 0px 0px 5px rgb(0 0 0 / 60%);
+	background: linear-gradient(90deg, rgba(253,207,189,1) 26%, rgba(224,165,214,1) 50%, rgba(180,203,232,1) 75%);
+	
+	height: 80px; 
+} 
+
+footer p { 
+	width: 16%;
+} 
